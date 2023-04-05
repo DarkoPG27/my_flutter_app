@@ -11,8 +11,10 @@ class ChartBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text(
-            '\$${spendingAmount.toStringAsFixed(0)}'), //to remove decimal places
+        FittedBox(
+          child: Text(
+              '\$${spendingAmount.toStringAsFixed(0)}'), //to remove decimal places
+        ),
         SizedBox(
           height: 4,
         ),
